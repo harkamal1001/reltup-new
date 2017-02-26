@@ -69,7 +69,7 @@ vm.processing = true;
 	};
 
 	
-vm.submitRegForm = function() {
+$scope.submitRegForm = function() {
 		vm.processing = true;
 		vm.message = '';
 		alert(vm.userData);
