@@ -47,7 +47,7 @@ vm.processing = true;
 
 				// if a user successfully logs in, redirect to users page
 				if (data.success){	
-						
+					alert(data.success);	
 					$location.path('/thankyou');
 				
 					 //angular.element( document.querySelector( '.modal-backdrop.fade.in' ) ).css('display','none');
