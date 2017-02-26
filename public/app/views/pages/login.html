@@ -30,14 +30,6 @@
               <div class="col-md-6 col-sm-6 col-xs-12 pad_none outer_text_making">
                 <h1 class="fadeInUp wow" data-wow-duration="2s" data-wow-delay="0s">Making <span>Visions</span> Come True</h1>
                 <div class="col-xs-12 pad_none fadeInUp wow both_button_outer" data-wow-duration="2s" data-wow-delay="0.3s">
-                  <!--div class="button_single"><a href="javascript:;">
-                    <div class="butn_img"><img src="assets/images/button_first.png" alt=""></div>
-                    <span class="scroll_right">Login</span>
-                  </a></div>
-                  <div class="button_single blue"><a href="javascript:;">
-                    <div class="butn_img"><img src="assets/images/button_secong.png" alt=""></div>
-                    <span class="scroll_right">Sign Up</span>
-                  </a></div-->
                   <div class="button_single">
                     <button class="login_pop button button--ujarak button--border-medium button--round-s button--text-thick" data-toggle="modal" data-target="#loginModal"><img src="assets/images/button_first.png" alt="" > Login</button>
                   </div>
@@ -209,11 +201,18 @@
   <img src="assets/images/close.png" alt="" class="close" data-dismiss="modal">
    <h3>Create An Account</h3>
     <div class="poup_form">
-       <form action="" method="get">
-       <input name="" type="text" placeholder="@illinois.edu">
-       <input name="" type="text" placeholder="Password">
-       <input name="" type="text" placeholder="Display Name">
-     <input name="" value="Create Account!" type="button" class="account">
+        <form ng-submit="submitRegForm()"   name="regForm" novalidate>
+       <input type="text" placeholder="@illinois.edu" ng-model="userData.Username" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : regForm.validUsername.$invalid && !regForm.validUsername.$pristine } " autocomplete="off">
+           <p ng-show="regForm.validUsername.$invalid && !regForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
+       <input type="password" placeholder="Password" ng-model="userData.password" id="validPassword" name="validPassword" required ng-class=" { 'has-error' : regForm.validPassword.$invalid && !regForm.validPassword.$pristine } " ng-minlength="3" ng-maxlength="20">
+           <p ng-show="regForm.validPassword.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
+            <p ng-show="regForm.validPassword.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
+           <p ng-show="regForm.validPassword.$invalid && !regForm.validPassword.$pristine && !regForm.validPassword.$error.minlength && !regForm.validPassword.$error.maxlength" class="help-block">{{pass_err}}</p>
+       <input name="displayName" type="text" placeholder="Display Name" ng-modal="userData.name" ng-minlength="3" ng-maxlength="20">
+	   <p ng-show="regForm.displayName.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
+            <p ng-show="regForm.displayName.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
+           <p ng-show="regForm.displayName.$invalid && !regForm.displayName.$pristine && !regForm.displayName.$error.minlength && !regForm.displayName.$error.maxlength" class="help-block">{{pass_err}}</p>
+     <input name="regSubmit" value="Create Account!" type="submit" class="account" ng-disabled="regForm.$invalid" >
        </form>
        <p>Already have an account?</p>
        <a href="#"  data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login Here</a>

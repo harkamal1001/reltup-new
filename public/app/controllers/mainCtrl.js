@@ -14,7 +14,8 @@ angular.module('mainCtrl', [])
         $scope.pass_err_length_max = 'Password is too long.';
         $scope.pass_err_length_min = 'Username is too short.';
         $scope.email_err = 'Email must be like user@illinois.edu';
-        
+        $scope.displayName ='';
+        $scope.regForm;
 
 
 	var vm = this;
@@ -59,27 +60,6 @@ vm.processing = true;
         }; // Login form #ends
 
 
-
-	// function to handle login form
-	vm.doLogin = function() {
-		vm.processing = true;
-
-		// clear the error
-		vm.error = '';
-
-		Auth.login(vm.loginData.username, vm.loginData.password)
-			.success(function(data) {
-				vm.processing = false;			
-
-				// if a user successfully logs in, redirect to users page
-				if (data.success)			
-					$location.path('/users');
-				else 
-					vm.error = data.message;
-				
-			});
-	};
-
 	// function to handle logging out
 	vm.doLogout = function() {
 		Auth.logout();
@@ -88,8 +68,21 @@ vm.processing = true;
 		$location.path('/');
 	};
 
-	vm.createSample = function() {
-		Auth.createSampleUser();
-	};
+	
+vm.submitRegForm = function() {
+		vm.processing = true;
+		vm.message = '';
+		alert(vm.userData);
+/*
+		// use the create function in the userService
+		User.create(vm.userData)
+			.success(function(data) {
+				vm.processing = false;
+				vm.userData = {};
+				vm.message = data.message;
+			});
+			*/
+	};		
+	
 
 });
