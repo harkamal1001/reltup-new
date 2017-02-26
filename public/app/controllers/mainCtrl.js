@@ -17,9 +17,6 @@ angular.module('mainCtrl', [])
         //$scope.displayName ='';
         $scope.regForm;
 		$scope.userData;
-		$scope.userData.name ='';
-		$scope.userData.password ='';
-		$scope.userData.username ='';
 
 	var vm = this;
 
