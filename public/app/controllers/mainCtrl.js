@@ -1,23 +1,23 @@
 angular.module('mainCtrl', [])
 
-.controller('mainController', function($rootScope, $location, Auth) {
-		var vm = this;
+.controller('mainController',['$scope', function($scope,$rootScope, $location, Auth) {
+
 //----------- used variables -----------------------------     
-        vm.LoginForm;
-        vm.validUsername ='';
-        vm.validPassword ='';
-        vm.username = '\\w+@illinois.edu';
-        vm.user = 'Hi user';
-        vm.error;
+        $scope.LoginForm;
+        $scope.validUsername ='';
+        $scope.validPassword ='';
+        $scope.username = '\\w+@illinois.edu';
+        $scope.user = 'Hi user';
+        $scope.error;
 //----------- validation Error -----------------------------
-        vm.pass_err = 'Password required';
-        vm.pass_err_length_max = 'Password is too long.';
-        vm.pass_err_length_min = 'Username is too short.';
-        vm.email_err = 'Email must be like user@illinois.edu';
+        $scope.pass_err = 'Password required';
+        $scope.pass_err_length_max = 'Password is too long.';
+        $scope.pass_err_length_min = 'Username is too short.';
+        $scope.email_err = 'Email must be like user@illinois.edu';
         
 
 
-	
+	var vm = this;
 
 	// get info if a person is logged in
 	vm.loggedIn = Auth.isLoggedIn();
@@ -65,4 +65,4 @@ angular.module('mainCtrl', [])
 		Auth.createSampleUser();
 	};
 
-});
+}]);
