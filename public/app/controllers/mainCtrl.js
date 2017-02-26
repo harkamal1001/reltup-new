@@ -1,8 +1,23 @@
 angular.module('mainCtrl', [])
 
 .controller('mainController', function($rootScope, $location, Auth) {
+var vm = this;
+//----------- used variables -----------------------------     
+        vm.LoginForm;
+        vm.validUsername ='';
+        vm.validPassword ='';
+        vm.username = '\\w+@illinois.edu';
+        vm.user = 'Hi user';
+        vm.error;
+//----------- validation Error -----------------------------
+        vm.pass_err = 'Password required';
+        vm.pass_err_length_max = 'Password is too long.';
+        vm.pass_err_length_min = 'Username is too short.';
+        vm.email_err = 'Email must be like user@illinois.edu';
+        
 
-	var vm = this;
+
+	
 
 	// get info if a person is logged in
 	vm.loggedIn = Auth.isLoggedIn();

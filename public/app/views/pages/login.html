@@ -253,6 +253,20 @@
   <img src="assets/images/close.png" alt="" class="close" data-dismiss="modal">
    <h3>Login to Reltup</h3>
     <div class="poup_form">
+
+    <form class="login-form" ng-submit="login.doLogin()">
+  <div class="alert alert-danger warning" ng-if="login.error">
+        {{ login.error }}
+      </div>
+    <input type="text" placeholder="ShopID" ng-model="login.loginData.username"/>
+    <input type="password" placeholder="Password" ng-model="login.loginData.password"/>
+    <button type="submit">Login</button>
+    <p class="message">Not registered? <a href="/users/create">Create an account</a>
+     &nbsp&nbsp<a href="/admin">Admin</a>
+    </p>
+  </form>
+
+  
        <form ng-submit="submitLoginForm()"   name="LoginForm" novalidate>
        <input type="text" placeholder="@illinois.edu" ng-model="validUsername" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : LoginForm.validUsername.$invalid && !LoginForm.validUsername.$pristine } " autocomplete="off">
            <p ng-show="LoginForm.validUsername.$invalid && !LoginForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
