@@ -34,31 +34,25 @@ angular.module('mainCtrl', [])
 	});	
 
 $scope.submitLoginForm = function() {
-            $scope.processing = true;
 
-            // clear the error
-            $scope.error = '';
-            //check to make sure the form is completely valid
-            if ($scope.LoginForm.$valid) {
-                alert("Valid login form");
-                $scope.processing = true;
 
-                // clear the error
-                $scope.error = '';
+vm.processing = true;
 
-                Auth.login($scope.LoginForm.validUsername, $scope.LoginForm.validPassword)
-                    .success(function(data) {
-                        $scope.processing = false;			
+		// clear the error
+		vm.error = '';
 
-                        // if a user successfully logs in, redirect to users page
-                        if (data.success)			
-                            $location.path('/users');
-                        else 
-                            $scope.error = data.message;
+		Auth.login($scope.LoginForm.validUsername, $scope.LoginForm.validPassword)
+			.success(function(data) {
+				vm.processing = false;			
 
-                    });
-     
-            }
+				// if a user successfully logs in, redirect to users page
+				if (data.success)			
+					$location.path('/users');
+				else 
+					vm.error = data.message;
+				
+			});
+
         }; // Login form #ends
 
 
