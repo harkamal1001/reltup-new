@@ -82,6 +82,18 @@ vm.submitRegForm = function() {
 			*/
 	};		
 	
-	
+	vm.saveUser = function() {
+		vm.processing = true;
+		vm.message = '';
+
+		// use the create function in the userService
+		User.create(vm.userData)
+			.success(function(data) {
+				vm.processing = false;
+				vm.userData = {};
+				vm.message = data.message;
+			});
+			
+	};	
 	
 });
