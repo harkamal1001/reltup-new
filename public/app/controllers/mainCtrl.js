@@ -7,7 +7,7 @@ angular.module('mainCtrl', [])
         $scope.validUsername ='';
         $scope.validPassword ='';
         $scope.username = '\\w+@illinois.edu';
-        $scope.user = 'Hi user';
+        //$scope.user = 'Hi user';
         $scope.error;
 //----------- validation Error -----------------------------
         $scope.pass_err = 'Password required';
