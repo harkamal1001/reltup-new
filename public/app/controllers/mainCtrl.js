@@ -74,13 +74,13 @@ $scope.submitRegForm = function() {
 		vm.message = '';
 		alert($scope.userData);
 		// use the create function in the userService
-		User.create(vm.userData)
+		/*User.create(vm.userData)
 			.success(function(data) {
 				vm.processing = false;
 				vm.userData = {};
 				vm.message = data.message;
 			});
-			
+			*/
 	};		
 	
 	
