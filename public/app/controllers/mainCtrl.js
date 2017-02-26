@@ -46,12 +46,12 @@ vm.processing = true;
 				vm.processing = false;			
 
 				// if a user successfully logs in, redirect to users page
-				if (data.success)			
+				if (data.success){			
 					$location.path('/thankyou');
 				document.getElementsByClassName("modal-backdrop");
 
 					 //angular.element( document.querySelector( '.modal-backdrop.fade.in' ) ).css('display','none');
-				else 
+				}else 
 					$scope = data.message;
 				
 			});
