@@ -41,7 +41,7 @@ vm.processing = true;
 		// clear the error
 		vm.error = '';
 
-		Auth.login($scope.LoginForm.validUsername, $scope.LoginForm.validPassword)
+		Auth.login($scope.validUsername, $scope.validPassword)
 			.success(function(data) {
 				vm.processing = false;			
 
