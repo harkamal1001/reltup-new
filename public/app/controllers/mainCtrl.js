@@ -52,7 +52,7 @@ vm.processing = true;
 				
 					 //angular.element( document.querySelector( '.modal-backdrop.fade.in' ) ).css('display','none');
 				}else 
-					$scope = data.message;
+					$scope.error = data.message;
 				
 			});
 
