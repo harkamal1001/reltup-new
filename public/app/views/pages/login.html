@@ -236,7 +236,7 @@
            <p ng-show="LoginForm.validPassword.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
             <p ng-show="LoginForm.validPassword.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
            <p ng-show="LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine && !LoginForm.validPassword.$error.minlength && !LoginForm.validPassword.$error.maxlength" class="help-block">{{pass_err}}</p>
-     <input name="loginFormSubmit" id="loginFormSubmit" value="Login" type="submit" class="account" ng-disabled="LoginForm.$invalid" data-dismiss="modal">
+     <input name="loginFormSubmit" id="loginFormSubmit" value="Login" type="submit" class="account" ng-disabled="LoginForm.$invalid">
        </form>
        <div class="signup">
          <ul>
