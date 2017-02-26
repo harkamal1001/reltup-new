@@ -202,7 +202,7 @@
    <h3>Create An Account</h3>
     <div class="poup_form">
 	
-        <form ng-submit="submitRegForm()"   name="regForm" novalidate>
+        <form ng-submit="userData.submitRegForm()"   name="regForm" novalidate>
        <input type="text" placeholder="@illinois.edu" ng-model="userData.Username" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : regForm.validUsername.$invalid && !regForm.validUsername.$pristine } " autocomplete="off">
            <p ng-show="regForm.validUsername.$invalid && !regForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
        <input type="password" placeholder="Password" ng-model="userData.password" id="validPassword" name="validPassword" required ng-class=" { 'has-error' : regForm.validPassword.$invalid && !regForm.validPassword.$pristine } " ng-minlength="3" ng-maxlength="20">
