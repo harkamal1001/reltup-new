@@ -1,4 +1,4 @@
-angular.module('mainCtrl', [])
+angular.module('mainCtrl', ['userService'])
 
 .controller('mainController',function($scope,$rootScope, $location, Auth, User) {
 
