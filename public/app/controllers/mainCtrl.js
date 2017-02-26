@@ -48,6 +48,11 @@ vm.processing = true;
 				// if a user successfully logs in, redirect to users page
 				if (data.success)			
 					$location.path('/thankyou');
+				//document.getElementsByClassName("modal-backdrop");
+				var myEl = angular.element( document.querySelector( '.modal-backdrop' ) );
+				myEl.addClass('in');
+				myEl.removeClass('in');
+
 					 //angular.element( document.querySelector( '.modal-backdrop.fade.in' ) ).css('display','none');
 				else 
 					$scope = data.message;
