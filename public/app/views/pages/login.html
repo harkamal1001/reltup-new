@@ -209,8 +209,8 @@
            <p ng-show="regForm.validPassword.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
             <p ng-show="regForm.validPassword.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
            <p ng-show="regForm.validPassword.$invalid && !regForm.validPassword.$pristine && !regForm.validPassword.$error.minlength && !regForm.validPassword.$error.maxlength" class="help-block">{{pass_err}}</p>
-       <input name="displayName" type="text" id="displayName" placeholder="Display Name" ng-modal="userData.name" ng-minlength="3" ng-maxlength="20" required ng-class=" { 'has-error' : regForm.displayName.$invalid && !regForm.displayName.$pristine } ">
-	   <p ng-show="regForm.displayName.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
+       <input type="text" placeholder="Display Name" ng-model="userData.name" id="displayName" name="displayName" required ng-class=" { 'has-error' : regForm.displayName.$invalid && !regForm.displayName.$pristine } " ng-minlength="3" ng-maxlength="20">
+           <p ng-show="regForm.displayName.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
             <p ng-show="regForm.displayName.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
            <p ng-show="regForm.displayName.$invalid && !regForm.displayName.$pristine && !regForm.displayName.$error.minlength && !regForm.displayName.$error.maxlength" class="help-block">{{pass_err}}</p>
      <input name="regSubmit" value="Create Account!" type="submit" class="account" ng-disabled="regForm.$invalid" >

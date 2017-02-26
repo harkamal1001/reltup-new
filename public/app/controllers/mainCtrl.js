@@ -16,7 +16,7 @@ angular.module('mainCtrl', [])
         $scope.email_err = 'Email must be like user@illinois.edu';
         $scope.displayName ='';
         $scope.regForm;
-
+		$scope.userData;
 
 	var vm = this;
 
@@ -84,24 +84,6 @@ $scope.submitRegForm = function() {
 			*/
 	};		
 	
-
-	
-vm.type = 'create';
-
-	// function to create a user
-	vm.saveUser = function() {
-		vm.processing = true;
-		vm.message = '';
-
-		// use the create function in the userService
-		User.create(vm.userData)
-			.success(function(data) {
-				vm.processing = false;
-				vm.userData = {};
-				vm.message = data.message;
-			});
-			
-	};		
 	
 	
 });
