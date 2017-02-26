@@ -1,0 +1,803 @@
+@media only screen and (min-width: 1201px) and (max-width: 1366px)
+{
+.outer_logo {
+	margin: 0 0 0 45px;
+}
+.outer_social_media {
+	margin: 15px 45px 0 0;
+}
+.cont_making_vision {
+	margin: 108px 0 50px 0;
+}
+.outer_text_making_img img {
+	width: 350px;
+}
+.outer_text_making {
+	padding: 76px 0 0 116px !important;
+}
+.outer_text_making h1 {
+	font-size: 58px;
+	line-height: 62px;
+}
+.discussion_inner {
+	padding: 50px 0 40px !important;
+}
+.discussion_inner h1 {
+	font-size: 48px;
+	line-height: 35px;
+	margin: 0 0 50px;
+}
+.discussion_left_part {
+	padding: 0 44px 0 0px !important;
+}
+.discussion_left_part img {
+	width: 415px;
+}
+.discussion_one {
+	height: 160px;
+	width: 160px;
+}
+.discussion_one_inner span {
+	height: 160px;
+}
+.discussion_one_right_text {
+	padding: 0 0 0 24px;
+	width: 72%;
+	height: 160px;
+}
+.discussion_one_right_text h2 {
+	font-size: 26px;
+	line-height: 30px;
+}
+.discussion_one_right_text li {
+	font-size: 16px;
+}
+.discussion_right_one {
+	margin-bottom: 15px;
+}
+.discussion_inner p {
+	font-size: 38px;
+	line-height: 40px;
+	margin: 40px 0 0 0;
+}
+.running_inner {
+	padding: 155px 0 60px !important;
+}
+.running_inner p {
+	font-size: 36px;
+	line-height: 42px;
+}
+.running_inner span {
+	font-size: 24px;
+	line-height: 30px;
+	padding: 10px 0 0;
+}
+.holding-outer h2 {
+	font-size: 46px;
+	line-height: 60px;
+}
+.sign-up {
+	width: 274px;
+}
+.sign-up a {
+	font-size: 24px;
+	line-height: 25px;
+}
+.holding-outer {
+	padding: 55px 0 63px;
+}
+.footer-out p {
+	padding: 38px 0;
+}
+
+/*Popup Starts*/
+
+.poup_outer {
+	top: 51%;
+	height: 580px;
+	padding: 60px 100px 40px;
+}
+
+/*Popup Ends*/
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+{
+.outer_logo {
+	margin: 0 0 0 20px;
+}
+.outer_social_media {
+	margin: 15px 20px 0 0;
+}
+.cont_making_vision {
+	margin: 90px 0 50px 0;
+}
+.outer_text_making_img img {
+	width: 320px;
+}
+.outer_text_making {
+	padding: 80px 0 0 90px !important;
+}
+.outer_text_making h1 {
+	font-size: 58px;
+	line-height: 62px;
+}
+.discussion_inner {
+	padding: 50px 0 40px !important;
+}
+.discussion_inner h1 {
+	font-size: 44px;
+	line-height: 35px;
+	margin: 0 0 50px;
+}
+.discussion_left_part {
+	padding: 0 44px 0 0px !important;
+}
+.discussion_left_part img {
+	width: 415px;
+}
+.discussion_one {
+	height: 160px;
+	width: 160px;
+}
+.discussion_one_inner span {
+	height: 160px;
+}
+.discussion_one_right_text {
+	padding: 0 0 0 24px;
+	width: 72%;
+	height: 160px;
+}
+.discussion_one_right_text h2 {
+	font-size: 26px;
+	line-height: 30px;
+}
+.discussion_one_right_text li {
+	font-size: 15px;
+	padding: 0 0 8px 20px;
+}
+.discussion_right_one {
+	margin-bottom: 15px;
+}
+.discussion_inner p {
+	font-size: 38px;
+	line-height: 40px;
+	margin: 40px 0 0 0;
+}
+.running_inner {
+	padding: 116px 0 60px !important;
+}
+.running_inner p {
+	font-size: 30px;
+	line-height: 36px;
+	padding: 0 23%;
+}
+.running_inner span {
+	font-size: 24px;
+	line-height: 30px;
+	padding: 10px 0 0;
+}
+.holding-outer h2 {
+	font-size: 40px;
+	line-height: 60px;
+}
+.sign-up {
+	width: 236px;
+}
+.sign-up a {
+	font-size: 24px;
+	line-height: 25px;
+	padding: 15px 0 13px;
+}
+.holding-outer {
+	padding: 55px 0 63px;
+}
+.footer-out p {
+	padding: 38px 0;
+}
+
+/*Popup Starts*/
+
+.poup_outer {
+	top: 51%;
+	height: 500px;
+	padding: 60px 100px 40px;
+}
+.poup_outer h3 {
+	font-size: 35px;
+}
+.poup_form input {
+	height: 46px;
+	padding: 3px 20px 0;
+}
+.account {
+	font-size: 21px !important;
+	height: 56px !important;
+}
+
+/*Popup Ends*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+.outer_logo {
+	margin: 0 0 0 20px;
+}
+.outer_social_media {
+	margin: 15px 15px 0 0;
+}
+.cont_making_vision {
+	margin: 90px 0 50px 0;
+}
+.outer_text_making_img img {
+	width: 320px;
+	float: right;
+}
+.outer_text_making {
+	padding: 80px 0 0 0 !important;
+}
+.outer_text_making h1 {
+	font-size: 50px;
+	line-height: 58px;
+}
+.discussion_inner {
+	padding: 50px 0 40px !important;
+}
+.discussion_inner h1 {
+	font-size: 44px;
+	line-height: 35px;
+	margin: 0 0 50px;
+}
+.discussion_left_part {
+	padding: 0 40px 0 0px !important;
+}
+.discussion_left_part img {
+	width: 100%;
+}
+.discussion_one {
+	height: 120px;
+	width: 120px;
+}
+.discussion_one_inner span {
+	height: 120px;
+}
+.discussion_one_inner span img {
+	width: 70px;
+}
+.discussion_one_right_text {
+	padding: 0 0 0 20px;
+	width: 72%;
+	height: 128px;
+}
+.discussion_one_right_text h2 {
+	font-size: 25px;
+	line-height: 25px;
+}
+.discussion_one_right_text li {
+	font-size: 14px;
+	padding: 0 0 5px 20px;
+}
+.discussion_right_one {
+	margin-bottom: 20px;
+}
+.discussion_inner p {
+	font-size: 38px;
+	line-height: 40px;
+	margin: 40px 0 0 0;
+}
+.running_inner {
+	padding: 116px 0 60px !important;
+}
+.running_inner p {
+	font-size: 30px;
+	line-height: 36px;
+	padding: 0 14%;
+}
+.running_inner span {
+	font-size: 24px;
+	line-height: 30px;
+	padding: 10px 0 0;
+}
+.holding-outer h2 {
+	font-size: 40px;
+	line-height: 60px;
+}
+.sign-up {
+	width: 236px;
+}
+.sign-up a {
+	font-size: 24px;
+	line-height: 25px;
+	padding: 15px 0 13px;
+}
+.holding-outer {
+	padding: 55px 0 63px;
+}
+.footer-out p {
+	padding: 38px 0;
+}
+
+/*Popup Starts*/
+
+.poup_outer {
+	top: 51%;
+	height: 500px;
+	padding: 60px 100px 40px;
+}
+.poup_outer h3 {
+	font-size: 35px;
+}
+.poup_form input {
+	height: 46px;
+	padding: 3px 20px 0;
+}
+.account {
+	font-size: 21px !important;
+	height: 56px !important;
+}
+
+/*Popup Ends*/
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) 
+{
+.row {
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.outer_logo {
+	margin: 0 0 0 10px;
+}
+.outer_logo img {
+	width: 126px;
+}
+.outer_social_media {
+	margin: 5px 5px 0 0;
+}
+.cont_making_vision {
+	margin: 50px 0 40px;
+}
+.outer_text_making_img {
+	margin: 40px 0 0 0;
+}
+.outer_text_making_img img {
+	width: 280px;
+	float: none;
+}
+.outer_text_making {
+	padding: 0 !important;
+}
+.outer_text_making h1 {
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+}
+.both_button_outer {
+	text-align: center;
+}
+.button_single {
+	float: none;
+	width: 120px;
+	margin: 0 8px 0 0;
+	display: inline-block;
+}
+.button {
+	min-width: 100% !important;
+	max-width: 100% !important;
+}
+.button_single button {
+	padding: 10px 0;
+	height: 43px;
+}
+.discussion_inner {
+	padding: 30px 0 20px !important;
+}
+.discussion_inner h1 {
+	font-size: 32px;
+	line-height: 30px;
+	margin: 0 0 30px;
+}
+.discussion_left_part {
+	text-align: center;
+	padding: 0 0 30px 0 !important;
+}
+.discussion_left_part img {
+	width: 280px;
+}
+.discussion_right_part {
+	margin: auto;
+	width: 420px;
+	float: none;
+}
+.discussion_one {
+	height: 120px;
+	width: 120px;
+}
+.discussion_one_inner span {
+	height: 120px;
+}
+.discussion_one_inner span img {
+	width: 70px;
+}
+.discussion_one_right_text {
+	padding: 0 0 0 20px;
+	width: 72%;
+	height: 128px;
+}
+.discussion_one_right_text h2 {
+	font-size: 25px;
+	line-height: 25px;
+}
+.discussion_one_right_text li {
+	font-size: 14px;
+	padding: 0 0 5px 20px;
+}
+.discussion_right_one {
+	margin-bottom: 20px;
+}
+.discussion_inner p {
+	font-size: 30px;
+	line-height: 30px;
+	margin: 10px 0 0 0;
+}
+.running_inn img {
+	width: 40px;
+}
+.running_inner {
+	padding: 76px 0 30px !important;
+}
+.running_inner p {
+	font-size: 22px;
+	line-height: 26px;
+	padding: 0 18%;
+}
+.running_inner span {
+	font-size: 18px;
+	line-height: 22px;
+	padding: 10px 0 0;
+}
+.holding-outer {
+	padding: 30px 0;
+}
+.holding-outer h2 {
+	font-size: 30px;
+	line-height: 40px;
+	padding: 0 0 10px 0;
+}
+.sign-up {
+	width: 178px;
+}
+.sign-up a {
+	font-size: 18px;
+	line-height: 16px;
+	padding: 15px 0 13px;
+}
+.footer-out p {
+	padding: 25px 0;
+	font-size: 15px;
+}
+
+/*Popup Starts*/
+
+.poup_outer {
+	top: 51%;
+	width: 90%;
+	height: 320px;
+	padding: 12px 50px 12px;
+}
+.close {
+	right: 0;
+	top: 0;
+}
+.poup_outer h3 {
+	font-size: 26px;
+}
+.poup_form {
+	padding: 20px 0 0;
+}
+.poup_form input {
+	height: 34px;
+	padding: 3px 10px 0;
+}
+.account {
+	font-size: 21px !important;
+	height: 56px !important;
+}
+
+/*Popup Ends*/
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) 
+{
+.row {
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.outer_logo {
+	margin: 0 0 0 10px;
+}
+.outer_logo img {
+	width: 126px;
+}
+.outer_social_media {
+	margin: 5px 5px 0 0;
+}
+.cont_making_vision {
+	margin: 50px 0 40px;
+}
+.outer_text_making_img {
+	margin: 40px 0 0 0;
+}
+.outer_text_making_img img {
+	width: 280px;
+	float: none;
+}
+.outer_text_making {
+	padding: 0 !important;
+}
+.outer_text_making h1 {
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+}
+.both_button_outer {
+	text-align: center;
+}
+.button_single {
+	float: none;
+	width: 120px;
+	margin: 0 8px 0 0;
+	display: inline-block;
+}
+.button {
+	min-width: 100% !important;
+	max-width: 100% !important;
+}
+.button_single button {
+	padding: 10px 0;
+	height: 43px;
+}
+.discussion_inner {
+	padding: 30px 0 20px !important;
+}
+.discussion_inner h1 {
+	font-size: 32px;
+	line-height: 30px;
+	margin: 0 0 30px;
+}
+.discussion_left_part {
+	text-align: center;
+	padding: 0 0 30px 0 !important;
+}
+.discussion_left_part img {
+	width: 280px;
+}
+.discussion_right_part {
+	margin: auto;
+	width: 420px;
+	float: none;
+}
+.discussion_one {
+	height: 120px;
+	width: 120px;
+}
+.discussion_one_inner span {
+	height: 120px;
+}
+.discussion_one_inner span img {
+	width: 70px;
+}
+.discussion_one_right_text {
+	padding: 0 0 0 20px;
+	width: 72%;
+	height: 128px;
+}
+.discussion_one_right_text h2 {
+	font-size: 25px;
+	line-height: 25px;
+}
+.discussion_one_right_text li {
+	font-size: 14px;
+	padding: 0 0 5px 20px;
+}
+.discussion_right_one {
+	margin-bottom: 20px;
+}
+.discussion_inner p {
+	font-size: 30px;
+	line-height: 30px;
+	margin: 10px 0 0 0;
+}
+.running_inn img {
+	width: 40px;
+}
+.running_inner {
+	padding: 76px 0 30px !important;
+}
+.running_inner p {
+	font-size: 22px;
+	line-height: 26px;
+	padding: 0 6%;
+}
+.running_inner span {
+	font-size: 18px;
+	line-height: 22px;
+	padding: 10px 0 0;
+}
+.holding-outer {
+	padding: 30px 0;
+}
+.holding-outer h2 {
+	font-size: 30px;
+	line-height: 40px;
+	padding: 0 0 10px 0;
+}
+.sign-up {
+	width: 178px;
+}
+.sign-up a {
+	font-size: 18px;
+	line-height: 16px;
+	padding: 15px 0 13px;
+}
+.footer-out p {
+	padding: 20px 0;
+	font-size: 15px;
+}
+
+}
+
+@media only screen and (max-width: 479px) 
+{
+.row {
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.outer_logo {
+	margin: 0 0 0 10px;
+}
+.outer_logo img {
+	width: 126px;
+}
+.outer_social_media {
+	margin: 5px 5px 0 0;
+}
+.cont_making_vision {
+	margin: 50px 0 40px;
+}
+.outer_text_making_img {
+	margin: 40px 0 0 0;
+}
+.outer_text_making_img img {
+	width: 280px;
+	float: none;
+}
+.outer_text_making {
+	padding: 0 !important;
+}
+.outer_text_making h1 {
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+}
+.both_button_outer {
+	text-align: center;
+}
+.button_single {
+	float: none;
+	width: 120px;
+	margin: 0 8px 0 0;
+	display: inline-block;
+}
+.button {
+	min-width: 100% !important;
+	max-width: 100% !important;
+}
+.button_single button {
+	padding: 10px 0;
+	height: 43px;
+}
+.discussion_inner {
+	padding: 30px 0 20px !important;
+}
+.discussion_inner h1 {
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0 0 30px;
+}
+.discussion_left_part {
+	text-align: center;
+	padding: 0 0 30px 0 !important;
+}
+.discussion_left_part img {
+	width: 280px;
+}
+.discussion_right_part {
+	margin: auto;
+	width: 300px;
+	float: none;
+}
+.discussion_one {
+	height: 120px;
+	width: 120px;
+	margin: 0 auto 10px;
+	float: none;
+}
+.discussion_one_inner span {
+	height: 120px;
+}
+.discussion_one_inner span img {
+	width: 70px;
+}
+.discussion_one_right_text {
+	padding: 0;
+	width: 100%;
+	height: auto;
+	display: block;
+	float: left;
+}
+.discussion_one_right_text h2 {
+	font-size: 25px;
+	line-height: 25px;
+}
+.discussion_one_right_text h2::before {
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+.discussion_one_right_text li {
+	font-size: 14px;
+	padding: 0 20px 5px 20px;
+}
+.discussion_right_one {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.discussion_inner p {
+	font-size: 22px;
+	line-height: 23px;
+	margin: 0;
+}
+.running_inn img {
+	width: 40px;
+}
+.running_inner {
+	padding: 45px 0 30px !important;
+}
+.running_inner p {
+	font-size: 18px;
+	line-height: 22px;
+	padding: 0;
+}
+.running_inner span {
+	font-size: 15px;
+	line-height: 18px;
+	padding: 10px 0 0;
+}
+.holding-outer {
+	padding: 30px 0;
+}
+.holding-outer h2 {
+	font-size: 22px;
+	line-height: 26px;
+	padding: 0 0 10px 0;
+}
+.sign-up {
+	width: 178px;
+}
+.sign-up a {
+	font-size: 16px;
+	line-height: 16px;
+	padding: 12px 0 9px;
+}
+.footer-out p {
+	padding: 20px 0;
+	font-size: 15px;
+}
+
+}
+
+
