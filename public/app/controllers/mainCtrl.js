@@ -58,7 +58,7 @@ vm.processing = true;
 
         }; // Login form #ends
 
-
+vm.user;
 	// function to handle logging out
 	vm.doLogout = function() {
 		Auth.logout();
@@ -67,7 +67,6 @@ vm.processing = true;
 		$location.path('/');
 	};
 
-	
 vm.submitRegForm = function() {
 		vm.processing = true;
 		vm.message = '';
