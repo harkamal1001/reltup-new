@@ -1,7 +1,7 @@
 angular.module('mainCtrl', [])
 
 .controller('mainController', function($rootScope, $location, Auth) {
-var vm = this;
+		var vm = this;
 //----------- used variables -----------------------------     
         vm.LoginForm;
         vm.validUsername ='';
