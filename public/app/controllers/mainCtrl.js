@@ -1,6 +1,6 @@
 angular.module('mainCtrl', [])
 
-.controller('mainController',['$scope', function($scope,$rootScope, $location, Auth) {
+.controller('mainController',function($scope,$rootScope, $location, Auth) {
 
 //----------- used variables -----------------------------     
         $scope.LoginForm;
@@ -65,4 +65,4 @@ angular.module('mainCtrl', [])
 		Auth.createSampleUser();
 	};
 
-}]);
+});
