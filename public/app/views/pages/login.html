@@ -266,14 +266,14 @@
     </p>
   </form>
 
-  
+
        <form ng-submit="submitLoginForm()"   name="LoginForm" novalidate>
        <input type="text" placeholder="@illinois.edu" ng-model="validUsername" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : LoginForm.validUsername.$invalid && !LoginForm.validUsername.$pristine } " autocomplete="off">
-           <p ng-show="LoginForm.validUsername.$invalid && !LoginForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
+           <p ng-show="LoginForm.validUsername.$invalid && !LoginForm.validUsername.$pristine" class="help-block">{{vm.email_err}}</p>
        <input type="password" placeholder="Password" ng-model="validPassword" id="validPassword" name="validPassword" required ng-class=" { 'has-error' : LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine } " ng-minlength="3" ng-maxlength="20">
-           <p ng-show="LoginForm.validPassword.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
-            <p ng-show="LoginForm.validPassword.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
-           <p ng-show="LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine && !LoginForm.validPassword.$error.minlength && !LoginForm.validPassword.$error.maxlength" class="help-block">{{pass_err}}</p>
+           <p ng-show="LoginForm.validPassword.$error.minlength" class="help-block">{{vm.pass_err_length_min}}</p>
+            <p ng-show="LoginForm.validPassword.$error.maxlength" class="help-block">{{vm.pass_err_length_max}}</p>
+           <p ng-show="LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine && !LoginForm.validPassword.$error.minlength && !LoginForm.validPassword.$error.maxlength" class="help-block">{{vm.pass_err}}</p>
      <input name="loginFormSubmit" id="loginFormSubmit" value="Login" type="submit" class="account" ng-disabled="LoginForm.$invalid">
        </form>
        <div class="signup">
