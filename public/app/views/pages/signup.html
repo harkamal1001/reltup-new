@@ -1,0 +1,19 @@
+   <div class="form">  
+
+  <div class="thumbnail"><img src="../../../assets/image/handshake.png"></div>
+   <p id="demo"></p>
+  <div class="container">
+  <div class="info">
+    <h1>Sign Up</h1>
+  </div>
+</div>
+  <form class="register-form" ng-submit="user.saveUser()">
+    <input type="text" placeholder="Shop name" ng-model="user.userData.name"/>
+    <input type="text" placeholder="Shop ID" ng-model="user.userData.username"/>
+    <input type="password" placeholder="Password" ng-model="user.userData.password"/>
+   
+<button type="submit"
+onclick="document.getElementById('demo').innerHTML ='You have now signin'" > create </button>
+    <p class="message">Already registered? <a href="/">Sign In</a></p>
+  </form>
+</div>

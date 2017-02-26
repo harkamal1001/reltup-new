@@ -1,0 +1,63 @@
+<!--
+<div >
+	
+	<table class="table table-bordered table-striped" ng-show="bill.bills">
+	<thead>
+		<tr>
+		    <th>_id</th>
+			<th>billNumber</th>
+			<th>rating</th>
+			<th>Comment</th>
+			
+			<th class="col-sm-2"></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="b in bill.bills">
+		    <td>{{ b._id }}</td>
+			<td>{{ b.billNumber }}</td>
+			<td>{{ b.rating }}</td>
+			<td>{{ b.comment }}</td>
+			<td class="col-sm-2">
+				<a ng-href="/bills/{{ b._id }}" class="btn btn-danger">Edit</a>
+				<a href="#" ng-click="bill.deleteUser(b._id)" class="btn btn-primary">Delete</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+-->
+
+<div class="form" >  
+
+  <div class="thumbnail">
+  <a ng-href="/"><img src="../../assets/image/handshake.png"></a>
+  </div>
+
+  
+<table ng-show="bill.bills">
+  <thead>
+    <tr>
+      <th>BillNumber</th>
+      <th>Rating</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr ng-repeat="b in bill.bills">
+		    
+			<td>{{ b.billNumber }}</td>
+			<td>{{ b.rating }}</td>
+			<td>{{ b.comment }}</td>
+			<td class="col-sm-2">
+				<!--<a ng-href="/bills/{{ b._id }}" class="btn btn-danger">Edit</a>
+				<a href="#" ng-click="bill.deleteUser(b._id)" class="btn btn-primary">Delete</a>-->
+			</td>
+		</tr>
+  </tbody>
+</table>
+
+  
+
+</div>
+

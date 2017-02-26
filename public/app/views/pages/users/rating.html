@@ -1,0 +1,71 @@
+<!--
+<div>
+<div class="head">
+<h1>SHOP NAME</h1>
+</div>
+<form  ng-submit="bill.saveBill()">
+ <div class="bill">
+  <h2>Bill No</h2>
+ </div>
+<input type="text" ng-model="bill.billData.billNumber">
+<div class="Rating">
+  <h2>Rating</h2>
+ </div>
+
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" ng-model="bill.billData.rating"/><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+
+    <input type="radio" id="star4" name="rating" value="4" ng-model="bill.billData.rating"/><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+  
+    <input type="radio" id="star3" name="rating" value="3" ng-model="bill.billData.rating"/><label class = "full" for="star3" title="Meh - 3 stars"></label>
+ 
+    <input type="radio" id="star2" name="rating" value="2" ng-model="bill.billData.rating"/><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+ 
+    <input type="radio" id="star1" name="rating" value="1" ng-model="bill.billData.rating" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+</fieldset>
+
+<div>
+ <p class="text">
+ <textarea name="comment" id="comment" placeholder="Comment" ng-model="bill.billData.comment"></textarea>
+ </p>
+</div>
+<button type="submit">Submit</button>
+</form>
+</div>
+-->
+
+<div class="form" >  
+
+  <div class="thumbnail"><a ng-href="admin"><img src="../../assets/image/handshake.png"></a></div>
+   <div class="bill">
+  <h2>Bill No</h2>
+ </div>
+<input type="text" placeholder="billNumber" ng-model="bill.billData.billNumber">
+  <div class="container">
+  <div class="info">
+    
+  <h2>Rating</h2>
+  <fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" ng-model="bill.billData.rating"/><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+
+    <input type="radio" id="star4" name="rating" value="4" ng-model="bill.billData.rating"/><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+  
+    <input type="radio" id="star3" name="rating" value="3" ng-model="bill.billData.rating"/><label class = "full" for="star3" title="Meh - 3 stars"></label>
+ 
+    <input type="radio" id="star2" name="rating" value="2" ng-model="bill.billData.rating"/><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+ 
+    <input type="radio" id="star1" name="rating" value="1" ng-model="bill.billData.rating" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+</fieldset>
+  </div>
+</div>
+  <form class="login-form" ng-submit="bill.saveBill()"">
+ 
+    
+    <textarea type="text" placeholder="Comment" ng-model="bill.billData.comment"></textarea>
+    <button type="submit">Submit</button>
+    
+
+
+  </form>
+</div>
+
