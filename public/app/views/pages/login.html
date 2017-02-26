@@ -1,29 +1,3 @@
-  <div class="form">  
-
-  <div class="thumbnail"><img src="../../assets/image/handshake.png"></div>
- 
-  <div class="container">
-  <div class="info">
-    <h1>Shop Rater</h1>
-  </div>
-</div>
-  <form class="login-form" ng-submit="login.doLogin()">
-  <div class="alert alert-danger warning" ng-if="login.error">
-        {{ login.error }}
-      </div>
-    <input type="text" placeholder="ShopID" ng-model="login.loginData.username"/>
-    <input type="password" placeholder="Password" ng-model="login.loginData.password"/>
-    <button type="submit">Login</button>
-    <p class="message">Not registered? <a href="/users/create">Create an account</a>
-     &nbsp&nbsp<a href="/admin">Admin</a>
-    </p>
-
-
-  </form>
-</div>
-
-
-<!----------------- new code ------------ -->
 
 <div class="outer_main">
   <section>
@@ -253,8 +227,6 @@
   <img src="assets/images/close.png" alt="" class="close" data-dismiss="modal">
    <h3>Login to Reltup</h3>
     <div class="poup_form">
-
-
 
 
        <form ng-submit="submitLoginForm()"   name="LoginForm" novalidate>

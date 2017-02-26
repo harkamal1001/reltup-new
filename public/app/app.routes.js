@@ -48,6 +48,11 @@ angular.module('app.routes', ['ngRoute'])
 			templateUrl: 'app/views/pages/users/single.html',
 			controller: 'userEditController',
 			controllerAs: 'user'
+		})
+		.when('/thankyou', {
+			templateUrl: 'app/views/pages/users/thankyou.html',
+			controller: '',
+			controllerAs: ''
 		});
 
 	$locationProvider.html5Mode(true);
