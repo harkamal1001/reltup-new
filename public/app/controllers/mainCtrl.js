@@ -14,9 +14,11 @@ angular.module('mainCtrl', [])
         $scope.pass_err_length_max = 'Password is too long.';
         $scope.pass_err_length_min = 'Username is too short.';
         $scope.email_err = 'Email must be like user@illinois.edu';
-        $scope.displayName ='';
+        //$scope.displayName ='';
         $scope.regForm;
-		$scope.userData;
+		$scope.userData.name;
+		$scope.userData.password;
+		$scope.userData.username;
 
 	var vm = this;
 
