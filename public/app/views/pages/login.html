@@ -216,11 +216,12 @@
            <p ng-show="regForm.displayName.$invalid && !regForm.displayName.$pristine && !regForm.displayName.$error.minlength && !regForm.displayName.$error.maxlength" class="help-block">{{pass_err}}</p>
      <input name="regSubmit" value="Create Account!" type="submit" class="account" ng-disabled="regForm.$invalid" >
        </form>
+       {{message}}
        <p>Already have an account?</p>
        <a href="#"  data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login Here</a>
     </div>
        </div>
-     
+    
     </div>
 
   </div>
