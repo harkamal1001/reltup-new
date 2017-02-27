@@ -69,7 +69,7 @@ vm.user;
 
 // Test function starts
 
-vm.submitSUForm = function(){
+$scope.submitSUForm = function(){
 
 	console.log("I am checking the form SU");
 }
