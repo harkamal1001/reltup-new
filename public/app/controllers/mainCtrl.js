@@ -91,7 +91,7 @@ vm.user;
 				vm.processing = false;
 				vm.userData = {};
 				vm.message = data.message;
-				console(data.message);
+				alert(data.message);
 				angular.element('.close').triggerHandler('click');
 			});	
 	};		
@@ -99,7 +99,14 @@ vm.user;
 User.all().success(function(data){
 	console.log(angular.fromJson(data));
 	var data_var = angular.fromJson(data);
-  	
+console(data.length);
+	var i=0, len=data.length;
+    for (i; i<len; i++) {
+      if (data.username == '123@illinois.edu') {
+        console.log(i);
+      }
+    }
+  
 });
 
 });
