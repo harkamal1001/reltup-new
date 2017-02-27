@@ -76,6 +76,9 @@ vm.user;
 
 
 $scope.submitRegForm = function() {
+
+
+		console.log(vm);
 		vm.processing = true;
 		vm.message = '';
 		console.log("I am clicking signup");
