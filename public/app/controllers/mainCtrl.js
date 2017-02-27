@@ -99,14 +99,7 @@ vm.user;
 User.all().success(function(data){
 	console.log(angular.fromJson(data));
 	var data_var = angular.fromJson(data);
-
-	var i=0, len=data.length;
-    for (i; i<len; i++) {
-      if (+data[i].username == +'123@illinois.edu') {
-        console.log( data[i]);
-      }
-    }
-  
+  	
 });
 
 });
