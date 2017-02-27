@@ -115,7 +115,7 @@ User.all().success(function(data){
     for (i; i<len; i++) {
       if (data[i].username == usernameFind) {
         //console.log(i);
-        return data[i];
+        return data[i]._id;
       }
     }
   
