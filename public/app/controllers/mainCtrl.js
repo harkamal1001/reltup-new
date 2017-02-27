@@ -127,6 +127,7 @@ $scope.submitForgetForm = function(){
       if (data[i].username == $scope.validUsernameForget) {
         //console.log(i);
         console.log(data[i]._id);
+        alert("your code is 5599.");
       }
     }
   
