@@ -52,7 +52,7 @@ vm.processing = true;
 				if (data.success){	
 					alert(data.success);	
 					$location.path('/thankyou');
-				
+					angular.element('.close').triggerHandler('click');
 					 //angular.element( document.querySelector( '.modal-backdrop.fade.in' ) ).css('display','none');
 				}else 
 					$scope.error = data.message;
@@ -75,9 +75,7 @@ vm.user;
 
 
 
-$scope.submitRegForm = function() {
-
-
+	$scope.submitRegForm = function() {
 		// console.log(vm);
 		vm.processing = true;
 		vm.message = '';
@@ -93,22 +91,8 @@ $scope.submitRegForm = function() {
 				vm.processing = false;
 				vm.userData = {};
 				vm.message = data.message;
-			});
-			
+				angular.element('.close').triggerHandler('click');
+			});	
 	};		
-	
-	vm.saveUser = function() {
-		vm.processing = true;
-		vm.message = '';
-
-		// use the create function in the userService
-		User.create(vm.userData)
-			.success(function(data) {
-				vm.processing = false;
-				vm.userData = {};
-				vm.message = data.message;
-			});
-			
-	};	
 	
 });
