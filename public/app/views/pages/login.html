@@ -173,8 +173,9 @@
        </form>
        <div class="signup">
          <ul>
-         <li data-toggle="modal" data-target="#regModal" data-dismiss="modal">SIGNUP </li>
-         <li data-toggle="modal" data-target="#forgetModal" data-dismiss="modal">Forgot Password</li>
+         <li data-toggle="modal" data-target="#regModal" >SIGNUP </li>
+         <li data-toggle="modal" data-target="#forgetModal" >Forgot Password</li>
+          <button id="LoginFormClose" data-dismiss="modal"> Close<button>
          </ul>
        </div>
        </div>
@@ -211,14 +212,15 @@
             <p ng-show="regForm.validPassword.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
            <p ng-show="regForm.validPassword.$invalid && !regForm.validPassword.$pristine && !regForm.validPassword.$error.minlength && !regForm.validPassword.$error.maxlength" class="help-block">{{pass_err}}</p>
        <input type="text" placeholder="Display Name" ng-model="displayNameReg" id="displayName" name="displayName" required ng-class=" { 'has-error' : regForm.displayName.$invalid && !regForm.displayName.$pristine } " ng-minlength="3" ng-maxlength="20">
-           <p ng-show="regForm.displayName.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
-            <p ng-show="regForm.displayName.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
-           <p ng-show="regForm.displayName.$invalid && !regForm.displayName.$pristine && !regForm.displayName.$error.minlength && !regForm.displayName.$error.maxlength" class="help-block">{{pass_err}}</p>
+           <p ng-show="regForm.displayName.$error.minlength" class="help-block">Display name is too small</p>
+            <p ng-show="regForm.displayName.$error.maxlength" class="help-block">Display name is too large</p>
+           <p ng-show="regForm.displayName.$invalid && !regForm.displayName.$pristine && !regForm.displayName.$error.minlength && !regForm.displayName.$error.maxlength" class="help-block">Display name is required.</p>
      <input name="regSubmit" value="Create Account!" type="submit" class="account" ng-disabled="regForm.$invalid" >
        </form>
        {{message}}
        <p>Already have an account?</p>
-       <a href="#"  data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login Here</a>
+       <a href="#"  data-toggle="modal" data-target="#loginModal" >Login Here</a>
+       <button id="RegFormClose" data-dismiss="modal"> Close<button>
     </div>
        </div>
     
@@ -243,7 +245,8 @@
            <p ng-show="ForgetForm.validUsername.$invalid && !ForgetForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
      <input name="" value="Reset Password" type="submit" class="account" ng-disabled="ForgetForm.$invalid">
        <div class="reset_outer">Or</div>
-        <input name="" value="Login" type="button" class="account login"  data-toggle="modal" data-target="#loginModal" data-dismiss="modal" >
+        <input name="" value="Login" type="button" class="account login"  data-toggle="modal" data-target="#loginModal" >
+         <button id="ForgetFormClose" data-dismiss="modal"> Close<button>
        </form>
     </div>
        </div>
