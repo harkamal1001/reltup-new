@@ -108,7 +108,7 @@ $scope.submitForgetForm = function(){
     for (i; i<len; i++) {
       if (data[i].username == $validUsernameForget) {
         alert(data[i].password);
-        $scope.userFound= true;
+        
       }
     }
   
@@ -127,7 +127,6 @@ User.all().success(function(data){
     for (i; i<len; i++) {
       if (data[i].username == usernameFind) {
         console.log(i);
-        userFound= true;
       }
     }
   
