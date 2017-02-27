@@ -20,6 +20,7 @@ angular.module('mainCtrl', ['userService'])
         $scope.validUsernameReg;
         $scope.validPasswordReg;
         $scope.displayNameReg;
+        $scope.validUsernameForget;
 	var vm = this;
 
 	// get info if a person is logged in
