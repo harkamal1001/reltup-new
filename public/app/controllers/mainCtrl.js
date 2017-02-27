@@ -102,7 +102,7 @@ User.all().success(function(data){
 console.log(data.length);
 	var i=0, len=data.length;
     for (i; i<len; i++) {
-      if (data.username == '123@illinois.edu') {
+      if (data[i].username == '123@illinois.edu') {
         console.log(i);
       }
     }
