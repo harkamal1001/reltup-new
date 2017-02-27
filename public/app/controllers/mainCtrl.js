@@ -97,14 +97,28 @@ vm.user;
 			});	
 	};	
 
-var submitForgetForm = function(){
-	alert("clicked");
+	$scope.userFound= false;
+$scope.getPassword= '';
+$scope.submitForgetForm = function(){
+	User.all().success(function(data){
+	console.log(angular.fromJson(data));
+	var data_var = angular.fromJson(data);
+	console.log(data.length);
+	var i=0, len=data.length;
+    for (i; i<len; i++) {
+      if (data[i].username == $validUsernameForget) {
+        alert(data[i].password);
+        $scope.userFound= true;
+      }
+    }
+  
+})
 }
 
 
 
-var userFound= false;	
-var findUser = function(usernameFind){
+	
+$scope.findUser = function(usernameFind){
 User.all().success(function(data){
 	console.log(angular.fromJson(data));
 	var data_var = angular.fromJson(data);
@@ -117,6 +131,7 @@ User.all().success(function(data){
       }
     }
   
-})};
+})
+};
 
 });
