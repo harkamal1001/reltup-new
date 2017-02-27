@@ -117,9 +117,20 @@ User.all().success(function(data){
 
 
 $scope.submitForgetForm = function(){
-	$scope.user_data = findUser($scope.validUsernameForget);
 
-	console.log($scope.user_data);
+	User.all().success(function(data){
+	//console.log(angular.fromJson(data));
+	var data_var = angular.fromJson(data);
+	//console.log(data.length);
+	var i=0, len=data.length;
+    for (i; i<len; i++) {
+      if (data[i].username == $scope.validUsernameForget) {
+        //console.log(i);
+        console.log(data[i]._id);
+      }
+    }
+  
+})
 }
 
 
