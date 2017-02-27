@@ -97,14 +97,6 @@ vm.user;
 			});	
 	};	
 
-$scope.submitForgetForm = function(){
-	$scope.user_data = findUser($scope.validUsernameForget);
-
-	console.log($scope.user_data);
-}
-
-
-
 var userFound= false;	
 findUser = function(usernameFind){
 User.all().success(function(data){
@@ -122,5 +114,16 @@ User.all().success(function(data){
   
 })
 };
+
+
+$scope.submitForgetForm = function(){
+	$scope.user_data = findUser($scope.validUsernameForget);
+
+	console.log($scope.user_data);
+}
+
+
+
+
 
 });
