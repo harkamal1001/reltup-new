@@ -623,6 +623,149 @@ section
 /*two*/
 
 
+/*thankyou*/
+
+.thankyou_outer
+{
+	float:left;
+	width:100%;
+	background:#394251;
+}
+
+.thankyou_outer .top_logo_social_icon {
+	margin: 15px 0 15px 0;
+}
+.thankyou_inner02
+{
+	padding:86px 0 60px !important;
+	text-align:center;
+}
+.thankyou_inner03 {
+	text-align: center;
+	padding: 20px 0 0 !important;
+}
+.thankyou_inner03 p
+{
+	font-size:42px;
+	color:#3b4453;
+	line-height:52px;
+	 font-family: 'proxima_novalight';
+	 margin:0;
+	 float:left;
+	 width:100%;
+	 text-align:center;
+}
+.thankyou_inner03 p samp
+{
+	font-family: 'PROXIMANOVACONDSEMIBOLDWEBFONT_0';
+	color:#ff9a27;
+}
+
+.thankyou_inner03 span
+{
+   display:inline-block;
+	width:auto;
+	padding:20px 0 0;
+	font-family: 'AkzidenzGroteskCERoman';
+	font-size:26px;
+	color:#3b4453;
+}
+.thankyou_inner03 span strong
+{
+	color:#01a8fe;
+}
+.social-footer {
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding-top: 65px;
+}
+.social-footer a
+{
+	margin:0 4px;
+}
+.social-footer .fa.fa-facebook {
+	font-size: 21px;
+	line-height: 42px;
+	width: 44px;
+	display: inline-block;
+	border: 3px solid #3776dd;
+	border-radius: 50%;
+	height: 44px;
+	color:#3776dd;
+	transition:All 1s ease;
+-webkit-transition:All 1s ease;
+-moz-transition:All 1s ease;
+-o-transition:All 1s ease;
+}
+.social-footer .fa.fa-facebook:hover {
+	border: 3px solid #3776dd;
+	color:#fff;
+	background:#3776dd;
+}
+.social-footer .fa.fa-twitter
+ {
+	font-size: 21px;
+	line-height: 41px;
+	width: 44px;
+	display: inline-block;
+	border: 3px solid #00bdf5;
+	border-radius: 50%;
+	height: 44px;
+	color:#00bdf5;
+	transition:All 1s ease;
+-webkit-transition:All 1s ease;
+-moz-transition:All 1s ease;
+-o-transition:All 1s ease;
+}
+.social-footer .fa.fa-twitter:hover
+ {
+	border: 3px solid #00bdf5;
+	color:#fff;
+	background:#00bdf5;
+}
+.social-footer .fa.fa-linkedin
+ {
+	font-size: 21px;
+	line-height: 38px;
+	width: 44px;
+	display: inline-block;
+	border: 3px solid #15a0c2;
+	border-radius: 50%;
+	height: 44px;
+	color:#15a0c2;
+	transition:All 1s ease;
+-webkit-transition:All 1s ease;
+-moz-transition:All 1s ease;
+-o-transition:All 1s ease;
+}
+.social-footer .fa.fa-linkedin:hover
+ {
+	border: 3px solid #15a0c2;
+	color:#fff;
+	background:#15a0c2;
+}
+.thankyou_footer
+{
+	float:left;
+	width:100%;
+	background:url(../images/thanyou-footer.png) center bottom no-repeat;
+	background-size:100% auto;
+}
+.thankyou_footer_inn
+{
+	padding:127px 0 20px !important;
+	text-align:center;
+}
+
+.thankyou_footer_inn p {
+	font-size: 19px;
+	font-family: 'proxima_novaregular';
+	color: #3b4453;
+	margin: 0;
+}
+
+/*thankyou-end*/
 
 /* ------------WBC096------------------*/ 
 .poup_outer2 {
