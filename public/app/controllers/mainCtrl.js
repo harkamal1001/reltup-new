@@ -67,20 +67,12 @@ vm.user;
 		$location.path('/');
 	};
 
-// Test function starts
-
-$scope.submitSUForm = function(){
-
-	console.log("I am checking the form SU");
-}
-
-
-// Test function ends
 
 
 
 
-vm.submitRegForm = function() {
+
+$scope.submitRegForm = function() {
 		vm.processing = true;
 		vm.message = '';
 		console.log("I am clicking signup");
