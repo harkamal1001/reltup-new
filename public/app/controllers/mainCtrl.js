@@ -83,7 +83,7 @@ $scope.submitRegForm = function() {
 		vm.message = '';
 		// console.log("I am clicking signup");
 		console.log({
-			'displayName': $scope.displayNameReg});
+			'name': $scope.displayNameReg , 'username': $scope.validUsernameReg ,  'password': $scope.validPasswordReg});
 		// use the create function in the userService
 		/*User.create(vm.userData)
 			.success(function(data) {
