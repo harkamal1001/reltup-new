@@ -16,6 +16,7 @@ angular.module('mainCtrl', ['userService'])
         $scope.email_err = 'Email must be like user@illinois.edu';
         //$scope.displayName ='';
         $scope.regForm;
+        $scope.userData;
 
 	var vm = this;
 
