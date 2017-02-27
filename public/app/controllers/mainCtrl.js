@@ -70,6 +70,7 @@ vm.user;
 vm.submitRegForm = function() {
 		vm.processing = true;
 		vm.message = '';
+		console.log("I am clicking signup");
 		alert(vm.userData);
 		// use the create function in the userService
 		/*User.create(vm.userData)
