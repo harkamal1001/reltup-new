@@ -67,6 +67,19 @@ vm.user;
 		$location.path('/');
 	};
 
+// Test function starts
+
+vm.submitSUForm = function(){
+
+	console.log("I am checking the form SU");
+}
+
+
+// Test function ends
+
+
+
+
 vm.submitRegForm = function() {
 		vm.processing = true;
 		vm.message = '';
