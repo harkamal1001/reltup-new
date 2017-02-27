@@ -132,4 +132,7 @@ User.all().success(function(data){
 })
 };
 
+
+$scope.findUser("user@illinois.edu");
+
 });
