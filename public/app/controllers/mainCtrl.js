@@ -17,7 +17,9 @@ angular.module('mainCtrl', ['userService'])
         //$scope.displayName ='';
         $scope.regForm;
         $scope.userData;
-
+        $scope.validUsernameReg;
+        $scope.validPasswordReg;
+        $scope.displayNameReg;
 	var vm = this;
 
 	// get info if a person is logged in
@@ -77,7 +79,7 @@ $scope.submitRegForm = function() {
 		vm.processing = true;
 		vm.message = '';
 		console.log("I am clicking signup");
-		alert($scope.userData[{"name": $scope.name}]);
+		alert($scope.userData[{"name": $scope.displayNameReg}]);
 		// use the create function in the userService
 		/*User.create(vm.userData)
 			.success(function(data) {
