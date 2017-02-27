@@ -128,6 +128,7 @@ $scope.submitForgetForm = function(){
         //console.log(i);
         console.log(data[i]._id);
         alert("your code is 5599.");
+        
       }
     }
   
