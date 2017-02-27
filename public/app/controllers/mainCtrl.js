@@ -50,7 +50,7 @@ vm.processing = true;
 
 				// if a user successfully logs in, redirect to users page
 				if (data.success){	
-					alert(data.success);	
+					//alert(data.success);	
 					$location.path('/thankyou');
 					angular.element('.close').triggerHandler('click');
 					 //angular.element( document.querySelector( '.modal-backdrop.fade.in' ) ).css('display','none');
@@ -91,8 +91,13 @@ vm.user;
 				vm.processing = false;
 				vm.userData = {};
 				vm.message = data.message;
+				alert(date.message);
 				angular.element('.close').triggerHandler('click');
 			});	
 	};		
 	
+User.all().success(function(data){
+	console.log(data);
+});
+
 });
