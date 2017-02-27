@@ -97,7 +97,6 @@ vm.user;
 			});	
 	};	
 
-	$scope.userFound= false;
 $scope.getPassword= '';
 $scope.submitForgetForm = function(){
 	User.all().success(function(data){
@@ -107,7 +106,7 @@ $scope.submitForgetForm = function(){
 	var i=0, len=data.length;
     for (i; i<len; i++) {
       if (data[i].username == $validUsernameForget) {
-        alert(data[i].password);
+        alert(data[i].username);
         
       }
     }
