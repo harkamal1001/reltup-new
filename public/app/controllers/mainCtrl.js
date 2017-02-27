@@ -98,6 +98,10 @@ vm.user;
 	
 User.all().success(function(data){
 	console.log(angular.fromJson(data));
+	var data_var = angular.fromJson(data);
+var a = data_var.indexOf("123@illinois.edu");
+
+console.log(a);
 });
 
 });
