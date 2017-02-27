@@ -513,6 +513,16 @@ section
 	top: -16px;
 	opacity: 1 !important;
 }
+.poup_outer h3 {
+    text-align: center;
+    font-size: 44px;
+    color: #5c5c5c;
+    margin: 0;
+    font-family: 'proxima_novabold';
+    /* background: url(../images/star.png) center bottom no-repeat; */
+    padding: 0;
+    text-transform: uppercase;
+}
 
 /*two*/
 .signup
