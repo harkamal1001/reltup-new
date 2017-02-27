@@ -92,9 +92,11 @@ vm.user;
 				vm.processing = false;
 				vm.userData = {};
 				vm.message = data.message;
-				alert(data.message);
+				//alert(data.message);
 				angular.element('.close').triggerHandler('click');
+				angular.element('.close').trigger('click');
 			});	
+
 	};	
 
 var userFound= false;	
@@ -127,8 +129,8 @@ $scope.submitForgetForm = function(){
       if (data[i].username == $scope.validUsernameForget) {
         //console.log(i);
         console.log(data[i]._id);
-        alert("your code is 5599.");
-        
+        //alert("your code is 5599.");
+
       }
     }
   
