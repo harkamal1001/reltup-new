@@ -91,7 +91,7 @@ vm.user;
 				vm.processing = false;
 				vm.userData = {};
 				vm.message = data.message;
-				console.log(date);
+				console(data.message);
 				angular.element('.close').triggerHandler('click');
 			});	
 	};		
