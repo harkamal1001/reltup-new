@@ -97,7 +97,7 @@ vm.user;
 	};		
 	
 User.all().success(function(data){
-	console.log(data);
+	console.log(angular.fromJson(data));
 });
 
 });
