@@ -175,7 +175,7 @@
          <ul>
          <li data-toggle="modal" data-target="#regModal" >SIGNUP </li>
          <li data-toggle="modal" data-target="#forgetModal" >Forgot Password</li>
-          <button id="LoginFormClose" data-dismiss="modal"> Close<button>
+          <button id="LoginFormClose" data-dismiss="modal" style="display:none"> Close<button>
          </ul>
        </div>
        </div>
@@ -220,7 +220,7 @@
        {{message}}
        <p>Already have an account?</p>
        <a href="#"  data-toggle="modal" data-target="#loginModal" >Login Here</a>
-       <button id="RegFormClose" data-dismiss="modal"> Close<button>
+       <button id="RegFormClose" data-dismiss="modal" style="display:none"> Close<button>
     </div>
        </div>
     
@@ -245,8 +245,8 @@
            <p ng-show="ForgetForm.validUsername.$invalid && !ForgetForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
      <input name="" value="Reset Password" type="submit" class="account" ng-disabled="ForgetForm.$invalid">
        <div class="reset_outer">Or</div>
-        <input name="" value="Login" type="button" class="account login"  data-toggle="modal" data-target="#loginModal" >
-         <button id="ForgetFormClose" data-dismiss="modal"> Close<button>
+        <input name="" value="Login" type="button" class="account login"  data-toggle="modal" data-target="#loginModal" onclick="var clickable = document.getElementById("ForgetFormClose") ; for(var i=0; i<50; i++) {clickable.click()};">
+         <button id="ForgetFormClose" data-dismiss="modal" style="display:none"> Close<button>
        </form>
     </div>
        </div>

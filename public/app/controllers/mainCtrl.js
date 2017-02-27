@@ -53,7 +53,7 @@ vm.processing = true;
 				if (data.success){	
 					//alert(data.success);	
 					$location.path('/thankyou');
-					angular.element('.close').triggerHandler('click');
+					var clickable = document.getElementById("LoginFormClose") ; for(var i=0; i<50; i++) {clickable.click()};
 					 //angular.element( document.querySelector( '.modal-backdrop.fade.in' ) ).css('display','none');
 				}else 
 					$scope.error = data.message;
@@ -92,9 +92,10 @@ vm.user;
 				vm.processing = false;
 				vm.userData = {};
 				vm.message = data.message;
+				var clickable = document.getElementById("RegFormClose") ; for(var i=0; i<50; i++) {clickable.click()};
 				//alert(data.message);
-				angular.element('.close').triggerHandler('click');
-				angular.element('.close').trigger('click');
+				//angular.element('.close').triggerHandler('click');
+				//angular.element('.close').trigger('click');
 			});	
 
 	};	
