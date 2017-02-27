@@ -106,7 +106,7 @@ $scope.submitForgetForm = function(){
 
 
 var userFound= false;	
-$scope.findUser = function(usernameFind){
+findUser = function(usernameFind){
 User.all().success(function(data){
 	//console.log(angular.fromJson(data));
 	var data_var = angular.fromJson(data);
