@@ -241,7 +241,7 @@
        <form ng-submit="submitForgetForm()" name="ForgetForm" novalidate>
          <input type="text" placeholder="@illinois.edu" ng-model="validUsernameForget" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : ForgetForm.validUsername.$invalid && !ForgetForm.validUsername.$pristine } " autocomplete="off" required>
            <p ng-show="ForgetForm.validUsername.$invalid && !ForgetForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
-     <input name="" value="Reset Password" type="button" class="account" ng-disabled="ForgetForm.$invalid">
+     <input name="" value="Reset Password" type="submit" class="account" ng-disabled="ForgetForm.$invalid">
        <div class="reset_outer">Or</div>
         <input name="" value="Login" type="button" class="account login"  data-toggle="modal" data-target="#loginModal" data-dismiss="modal" >
        </form>

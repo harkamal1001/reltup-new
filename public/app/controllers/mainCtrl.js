@@ -104,7 +104,7 @@ $scope.submitForgetForm = function(){
 
 
 var userFound= false;	
-var findUser = function(usernameFind){
+$scope.findUser = function(usernameFind){
 User.all().success(function(data){
 	console.log(angular.fromJson(data));
 	var data_var = angular.fromJson(data);
@@ -117,6 +117,7 @@ User.all().success(function(data){
       }
     }
   
-})};
+})
+};
 
 });
