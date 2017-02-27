@@ -99,7 +99,8 @@ vm.user;
 
 $scope.submitForgetForm = function(){
 	user_data = $scope.findUser($scope.validUsernameForget);
-	console.log(user_data.password);
+
+	console.log(user_data._id);
 }
 
 
