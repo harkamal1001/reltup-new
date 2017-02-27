@@ -238,11 +238,12 @@
   <img src="assets/images/close.png" alt="" class="close" data-dismiss="modal">
    <h3>Reset your Password</h3>
     <div class="poup_form">
-       <form action="" method="get">
-       <input name="" type="text" placeholder="@illinois.edu">
+       <form ng-submit="submitForgetForm()" name="ForgetForm" novalidate>
+         <input type="text" placeholder="@illinois.edu" ng-model="validUsernameForget" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : regForm.validUsername.$invalid && !regForm.validUsername.$pristine } " autocomplete="off">
+           <p ng-show="regForm.validUsername.$invalid && !regForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
      <input name="" value="Reset Password" type="button" class="account">
        <div class="reset_outer">Or</div>
-        <input name="" value="Login" type="button" class="account login"  data-toggle="modal" data-target="#loginModal" data-dismiss="modal">
+        <input name="" value="Login" type="button" class="account login"  data-toggle="modal" data-target="#loginModal" data-dismiss="modal" ng-disabled="regForm.$invalid">
        </form>
     </div>
        </div>

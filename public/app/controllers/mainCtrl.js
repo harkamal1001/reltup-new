@@ -94,19 +94,28 @@ vm.user;
 				alert(data.message);
 				angular.element('.close').triggerHandler('click');
 			});	
-	};		
-	
+	};	
+
+var submitForgetForm = function(){
+	alert("clicked");
+}
+
+
+
+var userFound= false;	
+var findUser = function(usernameFind){
 User.all().success(function(data){
 	console.log(angular.fromJson(data));
 	var data_var = angular.fromJson(data);
-console.log(data.length);
+	console.log(data.length);
 	var i=0, len=data.length;
     for (i; i<len; i++) {
-      if (data[i].username == '123@illinois.edu') {
+      if (data[i].username == usernameFind) {
         console.log(i);
+        userFound= true;
       }
     }
   
-});
+})};
 
 });
