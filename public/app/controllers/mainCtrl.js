@@ -97,27 +97,14 @@ vm.user;
 			});	
 	};	
 
-// $scope.getPassword= '';
-// $scope.submitForgetForm = function(){
-// 	User.all().success(function(data){
-// 	console.log(angular.fromJson(data));
-// 	var data_var = angular.fromJson(data);
-// 	console.log(data.length);
-// 	var i=0, len=data.length;
-//     for (i; i<len; i++) {
-//       if (data[i].username == $validUsernameForget) {
-//         alert(data[i].username);
-        
-//       }
-//     }
-  
-// })
-// }
+$scope.submitForgetForm = function(){
+	alert("clicked");
+}
 
 
 
-	
-$scope.findUser = function(usernameFind){
+var userFound= false;	
+var findUser = function(usernameFind){
 User.all().success(function(data){
 	console.log(angular.fromJson(data));
 	var data_var = angular.fromJson(data);
@@ -126,13 +113,10 @@ User.all().success(function(data){
     for (i; i<len; i++) {
       if (data[i].username == usernameFind) {
         console.log(i);
+        userFound= true;
       }
     }
   
-})
-};
-
-
-$scope.findUser("user@illinois.edu");
+})};
 
 });
