@@ -29,12 +29,12 @@ angular.module('mainCtrl', ['userService'])
 	// check to see if a user is logged in on every request
 	$rootScope.$on('$routeChangeStart', function() {
 		vm.loggedIn = Auth.isLoggedIn();	
-
+		console.log(Auth.isLoggedIn());
 		// get user information on page load
 		Auth.getUser()
 			.then(function(data) {
 				 //$scope.user = data.data;
-				console.log( data);
+				console.log(data);
 			});	
 	});	
 
