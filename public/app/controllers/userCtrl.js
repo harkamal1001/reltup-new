@@ -40,7 +40,7 @@ angular.module('userCtrl', ['userService'])
 })
 
 // controller applied to user creation page
-.controller('userCreateController', function(User,Auth) {
+.controller('userCreateController', function(User) {
 	
 	var vm = this;
 
