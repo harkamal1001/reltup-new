@@ -7,7 +7,7 @@ angular.module('mainCtrl', ['userService'])
         $scope.validUsername ='';
         $scope.validPassword ='';
         $scope.username = '\\w+@illinois.edu';
-        //$scope.user = 'Hi user';
+        $scope.user = '';
         $scope.error;
 //----------- validation Error -----------------------------
         $scope.pass_err = 'Password required';
@@ -33,8 +33,8 @@ angular.module('mainCtrl', ['userService'])
 		// get user information on page load
 		Auth.getUser()
 			.then(function(data) {
-				vm.user = data.data;
-				console.log(vm.user);
+				 $scope.user = data.data;
+				console.log( $scope.user);
 			});	
 	});	
 
