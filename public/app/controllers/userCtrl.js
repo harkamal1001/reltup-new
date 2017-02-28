@@ -40,7 +40,7 @@ angular.module('userCtrl', ['userService'])
 })
 
 // controller applied to user creation page
-.controller('userCreateController', function(User) {
+.controller('userCreateController', function(User,Auth) {
 	
 	var vm = this;
 
@@ -67,6 +67,7 @@ angular.module('userCtrl', ['userService'])
 
 // controller applied to user edit page
 .controller('userEditController', function($routeParams, User) {
+
 
 	var vm = this;
 
