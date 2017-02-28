@@ -33,8 +33,8 @@ angular.module('mainCtrl', ['userService'])
 		// get user information on page load
 		Auth.getUser()
 			.then(function(data) {
-				 $scope.user = data.data;
-				console.log( $scope.user);
+				 //$scope.user = data.data;
+				console.log( data);
 			});	
 	});	
 
