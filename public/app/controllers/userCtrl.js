@@ -68,7 +68,6 @@ angular.module('userCtrl', ['userService'])
 // controller applied to user edit page
 .controller('userEditController', function($routeParams, User) {
 
-
 	var vm = this;
 
 	// variable to hide/show elements of the view
